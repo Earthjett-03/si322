@@ -1,0 +1,136 @@
+/* 🔹 1. CSS สำหรับรีเซ็ตค่าเริ่มต้น และกำหนดค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* 🔹 2. Navbar (เมนูนำทาง) */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 3. โครงสร้างหลักของคอนเทนต์ */
+.container {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* 🔹 4. Header */
+header {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🔹 5. ส่วนหลักของเนื้อหา */
+main {
+    padding: 20px;
+}
+
+/* 🔹 6. ปุ่มเพิ่มสินค้า */
+.add-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-item .placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+}
+
+/* 🔹 7. รายการสินค้า */
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 🔹 8. ปุ่มกดไลก์ */
+.like-button {
+    background-color: #f00;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
